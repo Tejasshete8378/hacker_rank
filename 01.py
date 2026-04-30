@@ -1,16 +1,22 @@
-'''Given an integer, , perform the following conditional actions:
+"""
+PROBLEM STATEMENT: Conditional Logic Evaluation ("Weird" vs "Not Weird")
+-----------------------------------------------------------------------
+Objective:
+Given an integer n, perform specific conditional actions to determine 
+if the number is classified as "Weird" or "Not Weird" based on its 
+parity and range.
 
-If  is odd, print Weird
-If  is even and in the inclusive range of  to , print Not Weird
-If  is even and in the inclusive range of  to , print Weird
-If  is even and greater than , print Not Weird'''
+Constraints:
+1. If n is odd, print "Weird".
+2. If n is even and in the inclusive range of 2 to 5, print "Not Weird".
+3. If n is even and in the inclusive range of 6 to 20, print "Weird".
+4. If n is even and greater than 20, print "Not Weird".
 
+Task:
+Implement a function that evaluates these conditions using if-elif-else 
+statements and handle user input via the standard input stream.
+"""
 
-import math
-import os
-import random
-import re
-import sys
 
 def operation(n):
     if n%2 != 0:
