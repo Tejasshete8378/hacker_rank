@@ -17,7 +17,6 @@ Implement a function that evaluates these conditions using if-elif-else
 statements and handle user input via the standard input stream.
 """
 
-
 def operation(n):
     if n%2 != 0:
         print("Weird")
