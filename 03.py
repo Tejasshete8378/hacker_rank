@@ -26,9 +26,17 @@ def floatdiv (a,b):
     return float(a/b)
 
 if __name__ == '__main__':
+    print('*'*30,"Welcome to the Program",'*'*30)
+    print()
     a = int(input("Enter First Number: "))
+    print()
     b = int(input("Enter Second Number: "))
-    
+    print()
+
     if b != 0:
         print(f"Integer Division of {a} and {b}: {intdiv(a,b)}")
+        print()
         print(f"Float Division of {a} and {b}: {floatdiv(a,b)}")
+        print()
+
+print('*'*30,"Thank You",'*'*30) 
