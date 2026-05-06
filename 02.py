@@ -14,8 +14,7 @@ Constraints:
 
 Task:
 - Prompt the user for two integer inputs with descriptive labels.
-- Implement three functions: summation(), subtraction(), and 
-  multiplication().
+- Implement three functions: summation(), subtraction(), and multiplication().
 - Display the results using f-string formatting to provide 
   clear, labeled output for each calculation.
 """
@@ -30,11 +29,18 @@ def multiplication(a,b):
     return a*b
     
 if __name__ == '__main__':
-    
+        print('*'*30,"Welcome to the Program",'*'*30)
+        print()
         a = int(input("Enter First Number: "))
+        print()
         b = int(input("Enter Second Number: "))
-        
+        print()
+
         if (1<=a<=10**10) and (1<=b<=10**10):
             print(f"Addition of Two Numbers = {summation(a,b)}")
+            print()
             print(f"Substraction of Two Numbers = {subtraction(a,b)}")
+            print()
             print(f"Multiplication of Two Numbers = {multiplication(a,b)}")
+print()
+print('*'*30,"Thank You",'*'*30)
