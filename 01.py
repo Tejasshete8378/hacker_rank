@@ -29,6 +29,11 @@ def operation(n):
 
 if __name__ == '__main__':
     
+    print('*'*30,"Welcome to the Program",'*'*30)
+    print()
     n = int(input("Enter Number: ").strip())
-
+    print()
     operation(n)
+
+print()
+print('*'*30,"Thank You",'*'*30)
