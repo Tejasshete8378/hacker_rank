@@ -1,16 +1,24 @@
 """
-PROBLEM STATEMENT: 3D Grid Coordinate Filtering
------------------------------------------------
+PROBLEM STATEMENT : Multi-Variable Coordinate Permutations
+---------------------------------------------------------------------------------------------
 Objective:
-Given dimensions x, y, and z, generate all possible coordinate triplets 
-(i, j, k) such that 0 <= i <= x, 0 <= j <= y, and 0 <= k <= z.
+Generate a comprehensive list of all possible 3D coordinate triplets [i, j, k] 
+within specified boundaries, excluding those whose sum matches a given constraint.
 
 Constraint:
-Filter the generated list to exclude any triplet where the sum of its 
-components equals a target integer n (i + j + k != n).
+0 <= i <= x, 0 <= j <= y, 0 <= k <= z, and (i + j + k) != n
+
+Input:
+Four integers representing the maximum limits for x, y, and z, and a sum 
+constraint value n.
+
+Output:
+A list of coordinate lists [[i, j, k], ...] that satisfy the exclusion logic.
 
 Task:
-Generate a list of valid coordinates using list comprehensions.
+Capture four user inputs and call a filtering function to perform a nested 
+iteration across all three dimensions, returning only the coordinates where 
+ the sum of the indices is not equal to n.
 """
 
 def get_filtered_coordinates(x,y,z,n):
@@ -20,14 +28,21 @@ def get_filtered_coordinates(x,y,z,n):
             for k in range(z+1) 
             if i+j+k != n ]
     
-
+print('*'*30,"Welcome to the Program",'*'*30)
+print()
 if __name__ == '__main__':
     x = int(input("Enter First Coordinate limit(x): "))
+    print()
     y = int(input("Enter Second Coordinate limit(y): "))
+    print()
     z = int(input("Enter Third Coordinate limit(z): "))
+    print()
     n = int(input("Enter Sum Constraint (n): "))
-    
+    print()
     result = get_filtered_coordinates(x,y,z,n)
-    print(result)
+    print(f"Filtered Coordinates: {result}")
+
+print()
+print('*'*30,"Thank You",'*'*30)
 
 
