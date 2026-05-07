@@ -1,22 +1,40 @@
-'''The included code stub will read an integer, , from STDIN.
+"""
+PROBLEM STATEMENT : Spaced Sequential Integer Generator
+---------------------------------------------------------------------------------------------
+Objective:
+Develop a program that displays a sequence of integers from 1 to 'n' with consistent 
+spacing between each number, framed by decorative console banners.
 
-Without using any string methods, try to print the following:
+Constraint:
+n should be a positive integer.
 
-123...n
+Input:
+A user-defined integer 'n'.
 
-Note that "...." represents the consecutive values in between
+Output:
+- A "Welcome" header centered between asterisk borders.
+- A labeled line showing integers 1 through n, separated by single spaces.
+- A "Thank You" footer separated from the results by visual padding.
 
-Example
+Task:
+Read an input 'n', then use a while loop to print the sequence 1 to n. Use the 
+'end' parameter to maintain single-line output with spaces, and ensure 
+proper vertical spacing before the closing banner.
+"""
 
-n=5
-print the string 12345.
-'''
 
+
+print('*'*30,"Welcome to the Program",'*'*30)
+print()
 if __name__ == '__main__':
-    n = int(input())
+    n = int(input("Enter Number: "))
+    print()
     
     i = 1
-    
+    print(f"Sequential integers upto {n} are: ", end = '')
     while i <= n:
-        print(i, end = '')
+        print(i, end = ' ')
         i += 1
+print()      
+print()
+print('*'*30,"Thank You",'*'*30)
