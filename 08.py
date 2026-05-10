@@ -1,23 +1,27 @@
-'''
-PROBLEM STATEMENT:
-Write a Python program that accepts student names and their corresponding 
-scores. The program must:
-1. Store the data in a nested list format.
-2. Identify the second-highest unique score (Runner-Up).
-3. Handle cases where there aren't enough unique scores to find a runner-up.
-4. Print the names of all students who achieved that specific runner-up score 
-   in alphabetical order.
-5. Maintain a clean UI using spacing and separators.
+"""
+PROBLEM STATEMENT : Nested Lists and Second Lowest Grade
+---------------------------------------------------------------------------------------------
+Objective:
+Store student names and their corresponding grades in a nested list and identify the students 
+who have the second-lowest grade.
 
-INPUT:
-- Integer: Number of students.
-- String: Name of each student.
-- Float: Score of each student.
+Constraint:
+- The program requires at least two unique grade values to identify a second-lowest score.
+- If multiple students share the second-lowest grade, their names must be displayed 
+  in alphabetical order.
 
-OUTPUT:
-- A nested list of all records.
-- Name(s) and Score of the second-highest performer(s).
-'''
+Input:
+1. An integer representing the total number of students.
+2. For each student, a string representing the name and a float representing the score.
+
+Output:
+A list of names and scores of the students who achieved the second-lowest grade, 
+sorted alphabetically by name.
+
+Task:
+Collect student data into a nested list, determine the unique scores to find the second 
+position from the bottom, and filter the students who match that specific score.
+"""
 
 if __name__ == '__main__':
     print()
