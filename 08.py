@@ -20,6 +20,7 @@ OUTPUT:
 '''
 
 if __name__ == '__main__':
+    print()
     print('*'*30,"Welcome to the Program",'*'*30)
     print()
     records = []
@@ -50,4 +51,5 @@ if __name__ == '__main__':
         print(f"Student Name: {student} and Student Score: {second_lowest_grade} ")
 print()
 print('*'*30,"Thank You",'*'*30)
+print()
 
