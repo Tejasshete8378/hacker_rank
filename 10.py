@@ -16,24 +16,45 @@ in order and perform the corresponding operation on your list.'''
 
 
 if __name__ == '__main__':
-    N = int(input())
+    print()
+    print('*'*30,"Welcome to the Program",'*'*30)
+    print()
+    
+    N = int(input("Enter how many values you want to enter: "))
+    print()
     res_list =[]
+    
     for i in range(N):
-        command = input().split()
+        action = input("Enter Name of Operation ").lower()
+        print()
         
-        action = command[0]
-        
-        if action == 'Insert':
-            res_list.insert(int(command[1]),int(command[2]))
+        if action == 'insert':
+            insert_index = int(input("Enter Index: "))
+            insert_value = int(input("Enter Value: "))
+            res_list.insert(insert_index,insert_value)
         elif action == 'print':
             print(res_list)
         elif action == 'remove':
-            res_list.remove(int(command[1]))
+            remove_num = int(input("Enter Number to be Removed: "))
+            if remove_num in res_list:
+                res_list.remove(remove_num)
+            else:
+                print("Entered Numbered does not belong to the List")
         elif action == 'append':
-            res_list.append(int(command[1]))
+            append_num = int(input("Enter Number to Append: "))
+            res_list.append(append_num)
         elif action == 'sort':
             res_list.sort()
         elif action == 'pop':
-            res_list.pop()
+            if res_list:  # It will check that the list is not empty
+                res_list.pop()
+            else:
+                print("List is Empty")
         elif action == 'reverse':
             res_list.reverse()
+        else:
+            print("Please enter Valid Input")
+            print()
+    print(f"Final List: {res_list}")
+print('*'*30,"Thank You",'*'*30)
+print()
