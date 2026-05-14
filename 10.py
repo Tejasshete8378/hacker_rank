@@ -25,36 +25,52 @@ if __name__ == '__main__':
     res_list =[]
     
     for i in range(N):
-        action = input("Enter Name of Operation ").lower()
+        action = input("Enter Name of Operation: ").lower().strip()
         print()
         
         if action == 'insert':
             insert_index = int(input("Enter Index: "))
+            print()
             insert_value = int(input("Enter Value: "))
+            print()
             res_list.insert(insert_index,insert_value)
+
         elif action == 'print':
-            print(res_list)
+            print(f"Current List: {res_list}")
+            print()
+        
         elif action == 'remove':
             remove_num = int(input("Enter Number to be Removed: "))
+            print()
             if remove_num in res_list:
                 res_list.remove(remove_num)
             else:
-                print("Entered Numbered does not belong to the List")
+                print(f"{remove_num} does not belong to the List")
+                print()
+        
         elif action == 'append':
             append_num = int(input("Enter Number to Append: "))
+            print()
             res_list.append(append_num)
+        
         elif action == 'sort':
             res_list.sort()
+        
         elif action == 'pop':
-            if res_list:  # It will check that the list is not empty
+            if len(res_list)>0:  # It will check that the list is not empty
                 res_list.pop()
             else:
                 print("List is Empty")
+                print()
+        
         elif action == 'reverse':
             res_list.reverse()
+        
         else:
-            print("Please enter Valid Input")
+            print("Invalid Input. Please enter Valid Input")
             print()
+
     print(f"Final List: {res_list}")
-print('*'*30,"Thank You",'*'*30)
-print()
+    print()
+    print('*'*30,"Thank You",'*'*30)
+    print()
