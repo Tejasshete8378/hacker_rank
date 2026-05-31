@@ -2,7 +2,8 @@
 PROBLEM STATEMENT : Custom Full Name Greeting with Length Validation 
 ---------------------------------------------------------------------------------------------
 Objective:
-Create a program that takes a user's first and last name as input and prints a personalized greeting message, provided both names meet specific length requirements.
+Create a program that takes a user's first and last name as input and prints a personalized greeting message, 
+provided both names meet specific length requirements.
 
 Constraint:
 - The length of the first name must be less than or equal to 10 characters: len(first_name) <= 10
@@ -19,7 +20,8 @@ Output:
 - A closing thank you banner.
 
 Task:
-Accept first and last names, validate that neither exceeds 10 characters, and output either a formatted greeting or a validation error within a styled terminal layout.
+Accept first and last names, validate that neither exceeds 10 characters, and output either a formatted greeting 
+or a validation error within a styled terminal layout.
 
 """
 
