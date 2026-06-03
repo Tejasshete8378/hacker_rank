@@ -1,3 +1,29 @@
+"""
+PROBLEM STATEMENT : Interactive String Character Classifier
+---------------------------------------------------------------------------------------------
+Objective:
+Develop a command-line utility that allows users to input a string and evaluate it for the 
+presence of specific character classifications using structural string queries.
+
+Constraint:
+- The input string length must satisfy: 0 < len(data) < 1000.
+- The user menu selection must be parsed as a numeric option from 1 to 6.
+
+Input:
+- A user-provided string (`s`) representing the target dataset.
+- An integer (`choice`) indicating the validation routine to execute.
+
+Output:
+- A confirmation text block specifying whether the condition evaluates to True or False.
+- Terminal boundaries marked with decorative separators (`*`).
+- Error strings handling boundary exceptions or unrecognized choice inputs.
+
+Task:
+Design a control-flow system using Python's conditional statements and generator-driven 
+any() functions to iterate through individual string components and evaluate the entire 
+collection against user-selected criteria, exiting cleanly upon explicit signal.
+"""
+
 if __name__ == '__main__':
     import sys
     print('\n','*'*30,"Welcome to the Program",'*'*30,'\n')
