@@ -1,4 +1,33 @@
+"""
+Problem Statement Heading: Polar Coordinates Conversion
+---------------------------------------------------------------------------------------------
 
+Objective:
+---------------
+Convert a complex number z from Cartesian form to polar coordinates.
+
+Constraint:
+---------------
+Input must be a valid complex number.
+
+Input:
+---------------
+A single line containing the complex number z[cite: 28].
+
+Output:
+---------------
+Two lines:
+1. The value of r (modulus)[cite: 34].
+2. The value of φ (phase angle)[cite: 35].
+
+Task:
+---------------
+Convert the complex number z to polar coordinates (r, φ)[cite: 25].
+
+Explaination of task in short:
+--------------------------------------
+Calculate modulus r = sqrt(x^2 + y^2) [cite: 15] and phase angle φ (counter-clockwise angle from positive x-axis) [cite: 16] for a given complex number z.
+"""
 
 import cmath
 import math
