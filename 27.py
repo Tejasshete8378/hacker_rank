@@ -28,8 +28,6 @@ Task:
 Implement a dictionary-based lookup system using `defaultdict` to store a list of indices for each word encountered in the first group, then efficiently retrieve these indices for words in the second group.
 """
 
-
-
 from collections import defaultdict
 if __name__ == '__main__':
     print('\n','*'*30,"Welcome to the Program","*"*30,'\n')
