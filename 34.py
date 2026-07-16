@@ -1,38 +1,45 @@
 """
-PROBLEM STATEMENT : Unique Country Stamp Counter 
+PROBLEM STATEMENT: Lexicographic Combinations with Replacement
 ---------------------------------------------------------------------------------------------
 Objective:
---------------
-To determine the total number of distinct country names from a collection of inputs provided by the user.
+Generate all possible combinations of a given length 'n' from a provided string 's', 
+allowing for replacement of elements, and output them in lexicographic order.
 
 Constraint:
---------------
-The count of entries (n) must be an integer, and the program must iterate exactly n times to collect country names[cite: 1].
+- The input string consists of characters that must be sorted lexicographically 
+  before generating combinations.
+- Combinations are generated with replacement (an element can be chosen more than once).
+- The output should display each combination on a new line.
 
 Input:
---------------
-An integer representing the total number of country stamps, followed by n individual lines, each containing a country name[cite: 1].
+- A string 's' representing the pool of characters.
+- An integer 'n' representing the length of the combinations to be generated.
 
 Output:
---------------
-The total count of unique country names provided in the input[cite: 1].
+- A list of all unique combinations of length 'n', each printed as a joined string 
+  on a new line.
 
 Task:
---------------
-Collect a specified number of country names from the user, store them in a data structure that automatically handles uniqueness, and print the final count of distinct entries[cite: 1].
+- Take a string and an integer as input. Sort the string. Use the itertools library 
+  to generate combinations with replacement of length 'n'. Join the resulting 
+  tuples into strings and display them sequentially.
 """
+
+from itertools import combinations_with_replacement
 
 if __name__ == '__main__':
     print('\n','*'*30,"Welcome to the Program",'*'*30,'\n')
-    n = int(input("Enter total count of Country Names: "))
+    s = input("Enter String: ")
     print()
-    s = set()
-    
-    for i in range(1,n+1):
-        c_name = input(f"Enter Country {i} name: ")
-        print()
-        s.add(c_name)
+    new_s = sorted(s)
+    n = int(input("Enter Iterable: " ))
+    print()
 
-    print(f"Total Unique Country Number: {len(s)}")
+    iterated_data = combinations_with_replacement(new_s, n)
+
+    print("Iterated Data is as Follows: ",'\n')
+    for i in iterated_data:
+        result = "".join(i)
+        print(result)
 
     print('\n','*'*30,"Thank You",'*'*30,'\n')
