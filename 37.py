@@ -1,7 +1,6 @@
-
+from collections import deque
 if __name__ == '__main__':
-    print('\n', '*' * 30, "Welcome to the Program", 
-          '*' * 30, '\n')
+    print('\n', '*' * 30, "Welcome to the Program", '*' * 30, '\n')
     d = deque()
     
     try:
