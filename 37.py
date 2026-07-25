@@ -1,3 +1,35 @@
+"""
+PROBLEM
+STATEMENT : Interactive Deque Operations Manager 
+---------------------------------------------------------------------------------------------
+Objective:
+--------------
+To implement an interactive command-line interface that dynamically executes standard deque 
+methods (such as append, pop, appendleft, popleft, extend, etc.) provided by the user at runtime.
+
+Constraint:
+--------------
+- The input command must correspond to a valid method available on collections.deque.
+- Numeric arguments passed alongside commands must be appropriately parsed and typed.
+
+Input:
+--------------
+- An integer `n` representing the total number of operations to perform.
+- `n` space-separated strings, where each string contains a valid deque method name and an optional argument value.
+
+Output:
+--------------
+- Dynamic feedback for each operation including returned values (if any) and the updated state of the deque.
+- The final elements of the deque after all operations have completed.
+
+Task:
+--------------
+Write a Python program that initializes an empty collections.deque, accepts a sequence of dynamic 
+method commands from the user, validates and executes them safely using reflection, and displays 
+the intermediate and final states of the collection.
+
+"""
+
 from collections import deque
 if __name__ == '__main__':
     print('\n', '*' * 30, "Welcome to the Program", '*' * 30, '\n')

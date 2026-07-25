@@ -1,3 +1,37 @@
+"""
+PROBLEM STATEMENT : Dynamic Deque Method Execution Manager 
+---------------------------------------------------------------------------------------------
+Objective:
+--------------
+To build an interactive command-line utility that allows users to perform various standard 
+deque operations dynamically by entering method names and arguments at runtime.
+
+Constraint:
+--------------
+- The entered command must match an existing valid attribute or method of collections.deque.
+- Operation arguments should be correctly parsed into integers when applicable, falling back
+safely to strings.
+
+Input:
+--------------
+- An integer `n` denoting the total count of operations to execute.
+- `n` successive lines of user input representing the command name and optional arguments 
+(e.g., `append 10`).
+
+Output:
+--------------
+- Real-time feedback showing method return values (if any), the updated state of the deque 
+after each command, and the final collection state.
+
+Task:
+--------------
+Write a Python script that initializes an empty deque, accepts `n` dynamic method commands from 
+the user, validates them using reflection, executes the methods with parsed arguments, and 
+displays the step-by-step progress along with error handling.
+
+"""
+
+
 from collections import deque
 
 if __name__ == '__main__':
