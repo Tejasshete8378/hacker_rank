@@ -1,4 +1,5 @@
 if __name__ == '__main__':
+    print('\n','*'*30,"Welcome to the Program",'*'*30,'\n')
     total_eng = int(input("Enter total number of Students Subscribed to English Newspaper: "))
     set_eng = set()
     print("Enter Roll Numbers of Students Subscribed to English Newspaper: \n")
@@ -19,4 +20,5 @@ if __name__ == '__main__':
     print(f"Roll Numbers of Students having single Subscription are: {single_sub}")
     print(f"Total Number of Students having single Subscription are: {Total_single_sub}")
 
+    print('\n','*'*30,"Thank You",'*'*30,'\n')
     
